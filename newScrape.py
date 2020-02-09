@@ -7,10 +7,10 @@ genius = lyricsgenius.Genius("FWq-nqshdI4i_yjTbN4DytxK0ft4vDl4TqfQ2TL0634rZ_SYlc
 artist = genius.search_artist("Drake", max_songs=3, sort="popularity")
 print(artist.songs)
 for song in artist.songs:
-    print(song.lyrics)
+    print("")
 
 
 #song search
-
-singleSearch = genius.search_song("Over",artist.name)
+listSongs = ["Over","Hello"]
+singleSearch = genius.search_song(listSongs)
 print(singleSearch.lyrics)
